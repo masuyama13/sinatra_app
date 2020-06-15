@@ -1,0 +1,7 @@
+<button><a href="/new_memo">メモを追加</a></button>
+<h2>Memo一覧</h2>
+<ul>
+  <% @hash_data.each do |item| %>
+  <li><a href="/<%= item["id"] %>"><%= item["title"] %></a></li>
+  <% end %>
+</ul>

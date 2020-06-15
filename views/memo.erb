@@ -1,0 +1,9 @@
+<h2><%= @title %></h2>
+<p><%= @content %></p>
+<div>
+  <button><a href="/<%= @id %>/edit">変更</a></button>
+  <form method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="削除">
+  </form>
+</div>
